@@ -10,7 +10,7 @@ Description of how to programmatically request data from the microservice
 Three different types of calls corresponding to each of the 3 user stories are supported currently:
 1.	townerc.pythonanywhere.com – This returns a random name of a Pokemon character for which an image link exists.  For example, a GET request to townerc.pythonanywhere.com might return the Pokemon character name "Cascoon" as that is one of the ~300 characters with images available.
  
-2.	townerc.pythonanywhere.com/<name> – This redirects the user to the image of the Pokemon character.  For example, townerc.pythonanywhere.com/Cascoon redirects to imgix.ranker.com/.../cascoon-u3.jpg
+2.	townerc.pythonanywhere.com/name – This redirects the user to the image of the Pokemon character.  For example, townerc.pythonanywhere.com/Cascoon redirects to imgix.ranker.com/.../cascoon-u3.jpg
 
 3.	townerc.pythonanywhere.com/characters – This returns a list of the characters for which images exist.  For example: townerc.pythonanywhere.com/characters returns Bulbasaur, Ivysaur, ...
 
