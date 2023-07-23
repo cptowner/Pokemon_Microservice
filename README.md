@@ -1,5 +1,7 @@
 # Pokemon_Microservice
 
+YouTube video explanation:  https://youtu.be/v0yxjnditJU
+
 Overview of the microservice
 
 The microservice integrates with my partner’s Pokemon guessing game by providing the names of the characters for which images exist, a random name of a character for which an image exists, and the image of a character.  The microservice has a character name and character image (link) lookup such that if the request includes a character name, redirection to the image link occurs.  If the request is for “characters” then the names of all of the available characters (currently ~300) is returned.  If no special information is specified (no character name and not “characters”) then the name of a random character is returned.
