@@ -17,18 +17,15 @@ Three different types of calls corresponding to each of the 3 user stories are s
 
 UML sequence diagram that clearly communicates how to programmatically request and programmatically receive data from the microservice you implemented; No obvious notational errors
 
-user                         townerc.pythonanywhere.com
-
-GET townerc.pythonanywhere.com/ -------->   
-
-<---  Random Character Name 
+<img width="534" alt="image" src="https://github.com/cptowner/Pokemon_Microservice/assets/3808424/8535720b-49c6-47a6-92b5-8685aeafc205">
 
 
-GET townerc.pythonanywhere.com/<name> -->
+https://sequencediagram.org/
+title Pokemon Microservice
 
-<---  Redirect to image of character
-
-
-GET townerc.pythonanywhere.com/characters
-
-<---  Names of all characters
+User->Microservice:GET request to townerc.pythonanywhere.com
+User<--Microservice: HTTP response body includes name \nof Pokemon character for which an \nimage exists
+User->Microservice:GET request to townerc.pythonanywhere.com/<name>
+User<--Microservice: HTTP redirect to image source of the character
+User->Microservice:GET request to townerc.pythonanywhere.com/characters
+User<--Microservice: HTTP response body includes names \nof all Pokemon characters for which an \nimage exists
